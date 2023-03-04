@@ -61,6 +61,10 @@ int main() {
         for (int i = 0; i < n-1; i++) {
             x_rand = rand() % n;
             y_rand = rand() % n;
+            while (b[x_rand][y_rand] == boom) {
+                x_rand = rand() % n;
+                y_rand = rand() % n;
+            }
             b[x_rand][y_rand] = boom;
         }
 
