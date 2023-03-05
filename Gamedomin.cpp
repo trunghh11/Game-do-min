@@ -67,6 +67,12 @@ int main() {
             cout << "ERROR!! [m > 1 and n > 1] PLEASE TRY AGAIN: ";
             cin >> m >> n;
         }
+        while (m > 40 || n > 40) {
+            cout << '\n';
+            cout << "ERROR!! THAT MAP IS TOO LARGE! PLEASE TRY AGAIN: ";
+            cin >> m >> n;
+        }
+        
         int num_booms;
         cout << "..::Enter the number of bombs you want [ < " << m*n << " ] : ";
         cin >> num_booms;
